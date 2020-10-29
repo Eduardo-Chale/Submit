@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submits</title>
+    <script src="comprobar.js"></script>
+</head>
+<body>
+<h1>Validaciones</h1>
+<form onsubmit="return validacion()">
+    <p>El codigo de barras tiene que ser unicamente numerico, con una longitud de 12 o 13 caracteres y en caso de tener 13 caracteres debe iniciar con los numeros "750" para sus primeros tres caracteres</p>
+    Codigo de barras: <input type="number"  id="barras">
+    <p id="pBarras"></p>
+    <p>La contraseña debe tener una longitud de 12 caracteres, al menos una mayuscula, una minuscula, numero y un caracter especial</p>
+    Contraseña: <input type="text"  id="contra">
+    <br>
+    <input type="submit" value="Submit">
+    <p id="pContra"></p>
+</form>
+
+</body>
+</html>
